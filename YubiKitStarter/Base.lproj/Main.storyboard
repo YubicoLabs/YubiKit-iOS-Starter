@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YubiKitStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YubiKit Starter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSY-IJ-EDJ">
+                                <rect key="frame" x="0.0" y="169" width="414" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="9Br-4C-xza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert YubiKey..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LQ-po-ap8">
+                                <rect key="frame" x="0.0" y="236" width="414" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="8aQ-p7-JWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.17605930575130091" blue="0.067045232370792185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XP-vP-qla">
+                                <rect key="frame" x="0.0" y="282" width="414" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="qKg-C7-YSG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64V-3B-ASo">
+                                <rect key="frame" x="0.0" y="307" width="414" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="PhO-D3-1SE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yubico Full Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-sA-sco">
+                                <rect key="frame" x="142" y="88" width="130" height="83"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6XP-vP-qla" firstAttribute="leading" secondItem="64V-3B-ASo" secondAttribute="leading" id="17e-Qw-9lj"/>
+                            <constraint firstItem="Rlo-sA-sco" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="BoD-BD-bpJ"/>
+                            <constraint firstItem="Rlo-sA-sco" firstAttribute="centerX" secondItem="FSY-IJ-EDJ" secondAttribute="centerX" id="Doc-hu-h8i"/>
+                            <constraint firstAttribute="trailing" secondItem="FSY-IJ-EDJ" secondAttribute="trailing" id="EDa-7W-9Zk"/>
+                            <constraint firstItem="2LQ-po-ap8" firstAttribute="leading" secondItem="6XP-vP-qla" secondAttribute="leading" id="EVO-ho-sJF"/>
+                            <constraint firstItem="FSY-IJ-EDJ" firstAttribute="leading" secondItem="2LQ-po-ap8" secondAttribute="leading" id="JWh-E2-fGW"/>
+                            <constraint firstItem="2LQ-po-ap8" firstAttribute="top" secondItem="FSY-IJ-EDJ" secondAttribute="bottom" constant="21" id="LcZ-Kx-5Wu"/>
+                            <constraint firstItem="FSY-IJ-EDJ" firstAttribute="trailing" secondItem="2LQ-po-ap8" secondAttribute="trailing" id="ShH-Ya-kzY"/>
+                            <constraint firstItem="Rlo-sA-sco" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="UDV-og-bny"/>
+                            <constraint firstItem="64V-3B-ASo" firstAttribute="top" secondItem="6XP-vP-qla" secondAttribute="bottom" constant="3" id="XYf-WL-FlG"/>
+                            <constraint firstItem="6XP-vP-qla" firstAttribute="top" secondItem="2LQ-po-ap8" secondAttribute="bottom" constant="13" id="acf-xs-ax9"/>
+                            <constraint firstItem="2LQ-po-ap8" firstAttribute="trailing" secondItem="6XP-vP-qla" secondAttribute="trailing" id="fJX-C5-SJd"/>
+                            <constraint firstItem="6XP-vP-qla" firstAttribute="trailing" secondItem="64V-3B-ASo" secondAttribute="trailing" id="gko-DZ-LcI"/>
+                            <constraint firstItem="FSY-IJ-EDJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="mRf-Df-twu"/>
+                            <constraint firstItem="FSY-IJ-EDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uXc-nS-vQ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblFirmware" destination="64V-3B-ASo" id="VSi-T9-BxI"/>
+                        <outlet property="lblKeyInserted" destination="2LQ-po-ap8" id="y8r-ay-agt"/>
+                        <outlet property="lblSerial" destination="6XP-vP-qla" id="6fS-NB-cl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Yubico Full Logo" width="300" height="82.5"/>
+    </resources>
+</document>
